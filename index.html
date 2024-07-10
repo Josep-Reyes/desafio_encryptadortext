@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    
+ <div class="presentacion__general">
+
+    <div class="presentacion__inicial">
+        <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html"><img class="header_menu_imagen" src="./assets/Logo.png"></a>
+        </nav>
+        </header>
+
+            <div class="presentacion">
+            <textarea class="presentacion__texto" id="encriptatexto" rows="9" placeholder="Ingrese el texto aqui"></textarea>
+            
+                <div class="presentacion__enlaces">
+                    <div class="presentacion__aviso" id="aviso">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"/></svg>
+                        <p class="presentacion__aviso__texto">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    
+                    <div class="presentacion__botones">
+                        <button onclick="encriptar();" id="encriptado" class="presentacion__enlaces__link">
+                            Encriptar
+                        </button>
+                        <button onclick="desencriptar();" id="desencriptado" class="presentacion__enlaces__link__dos">
+                            Desencriptar
+                        </buttton>
+                    </div>
+                </div>
+                </div>
+        </main>
+    </div>
+
+    <div class="presentacion__imagen" id="presentacion__imagen">
+        <img class="presentacion__imagen__muneco" src="./assets/Muñeco.png" alt="Foto de Muñeco">
+        <div class="presentacion__resultado">
+        <p class="presentacion__resultado__estado">Ningun menaje fue encontrado</p>
+        <p class="presentacion__resultado__texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+    </div>
+
+    <div class="resultado" id="resultado">
+        <textarea class="resultado__texto" id="resultadotexto" rows="12"></textarea>
+        <button onclick="copiar();" id="copiar" class="resultado__enlaces__link">
+            Copiar
+        </button>
+    </div>
+ </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
